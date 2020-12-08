@@ -1,11 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { setFilter } from '../actions/action'
+import { ALL, COMPLETED, INCOMPLETE } from '../actions/action'
 
-
-const ALL = 'Все'
-const COMPLETED = 'Выполнено'
-const INCOMPLETE = 'Невыполненный'
 const Filters = [ALL, COMPLETED, INCOMPLETE]
 
 function Filter({ todoFilter, setFilter }) {

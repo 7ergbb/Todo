@@ -1,5 +1,6 @@
 import { ADD_TODO, TOGGLE_TODO, SET_FILTER } from '../actions/action';
-import store from './store';
+import { ALL } from '../actions/action';
+
 
 let initialState = {
     todo: {}
@@ -55,7 +56,7 @@ export const todoState = (state = initialState, action) => {
 };
 
 let filterInitialState = {
-    activeFilter: 'Все'
+    activeFilter: ALL
 }
 
 export const todoFilter = (state = filterInitialState, action) => {
